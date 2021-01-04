@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
 </head>
-<body onload="init()">
+<body>
     <main>
         <header>
             <div class="container">
@@ -231,7 +231,7 @@
                     </div>
                      <!-- end---here -->
                 </div>
-                <div class="meme-container hidden">
+                <div class="meme-container2 hidden">
                     <div class="meme-control">
                         <canvas class="memeCanvas">
                             Your browser does not support the HTML5 canvas tag.
@@ -247,9 +247,9 @@
                         </div>
                     </div>
                         <div class="secondary_controler">
-                              <button onclick="newTxtBtnClicked()">
+                              <!-- <button onclick="newTxtBtnClicked()">
                             <i class="fas fa-plus"></i>  Add Line
-                        </button>
+                        </button> -->
                         <button onclick="toggleView()"  class="back-home">
                             <i class="fas fa-times"></i> Back to Gallery
                         </button>
@@ -258,8 +258,13 @@
                                 <i class="fas fa-cloud-download-alt"></i> Download
                             </span>
                         </a>
+                        <a href="#" class="choose_file">
+                            <label for="#">
+                                <input type="file" name="file1" id="file1">
+                            </label>
+                        </a>
                     </div>
-                </div>
+                 </div>
                 <div class="contact">
                 </div>
            </div>
@@ -284,7 +289,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/images.js"></script>
     <script src="js/meme.js"></script>
-    <script src="js/canva.js"></script>
     <script src="js/main.js"></script>
 </body>
 
