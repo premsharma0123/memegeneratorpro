@@ -85,6 +85,8 @@ main .middle_content{
     }
 }
 main{
+    background:#f1eee5 url(../img/gallery/pattern34.png)repeat;
+    background-size: cover;
     header {
         background:#007EAD;//#274c5e; // #3b8686;
         .logo{
@@ -216,13 +218,44 @@ main{
         left: 50px;
     }
     .middle_content{
+        // min-height: calc(100vh - 233px);
+        min-height: calc(100vh - 191px);
         .mid_wrp {
+            margin: 7rem 0 0;
+            .child-mid{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            // grid-template-rows: auto 1fr auto;
+            grid-template-columns:1fr 1fr; //repeat(auto-fill, minmax(250px, 1fr));
             grid-gap: 15px;
             width: 90%;
             margin: 0 auto 0;
-            padding: 7rem 0 0;
+          //  padding: 7rem 0 0; 
+            .left_side{
+                text-align: center;
+            }
+            .right-side{
+                @include flex;
+                .text-content{
+                    p{
+                      font-size: 1.5rem;
+                      line-height: 1.5;
+                      word-spacing: 1px;
+                }
+               }
+            }
+              .mid-cmn {
+                background: #fff;
+                text-align: center;
+                padding: 1rem;
+                border-radius: 5px;
+                figure{
+                    img{
+                        max-width: 100%;
+                        object-fit: cover;
+                    }
+                }
+             }
+           }
         }
     }
 }

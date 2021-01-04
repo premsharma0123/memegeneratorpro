@@ -97,6 +97,11 @@ main .middle_content .head_line_wrp .unorder .List_active {
   color: #fff;
 }
 
+main {
+  background: #f1eee5 url(../img/gallery/pattern34.png) repeat;
+  background-size: cover;
+}
+
 main header {
   background: #007EAD;
 }
@@ -234,15 +239,59 @@ main .sidenav .closebtn {
   left: 50px;
 }
 
+.meme_Wrapper .middle_content {
+  min-height: calc(100vh - 191px);
+}
+
 .meme_Wrapper .middle_content .mid_wrp {
+  margin: 7rem 0 0;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
   width: 90%;
   margin: 0 auto 0;
-  padding: 7rem 0 0;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid .left_side {
+  text-align: center;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid .right-side .text-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  word-spacing: 1px;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid .mid-cmn {
+  background: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.meme_Wrapper .middle_content .mid_wrp .child-mid .mid-cmn figure img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*-------Fonts---------*/
