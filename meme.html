@@ -37,7 +37,7 @@
          <!-- sidebar----section---end-here -->
         <section class="middle_content">
             <div class="container">
-                <div class="gallery grid-wrp">
+                <div class="gallery grid-container grid-wrp">
                     <!-- js render -->
                     <div class="mid_wrp">
                         <div class="child-mid">
@@ -85,29 +85,39 @@
                     </div>
                 </div>
                 <div class="meme-container hidden">
-                    <button onclick="toggleView()"  class="back-home">
-                        <i class="fas fa-times"></i> Back to Gallery
-                    </button>
-
                     <div class="meme-control">
                         <canvas class="memeCanvas">
                             Your browser does not support the HTML5 canvas tag.
                         </canvas>
+                        <!-- <div class="canva_img">
+                            <figure>
+                                <img src="img/gallery/alina.png" alt="">
+                            </figure>
+                        </div> -->
 
                         <div class="txts-list">
                             <!-- js render -->
                         </div>
                     </div>
-                    <button onclick="newTxtBtnClicked()">
-                        <i class="fas fa-plus"></i>  Add Line
-                    </button>
-                    <a id="dl" download="meme.png" href="#" onclick="dlCanvas(this)">
-                        <span>
-                            <i class="fas fa-cloud-download-alt"></i> Download
-                        </span>
-                    </a>
-
-                </div>
+                        <div class="secondary_controler">
+                              <!-- <button onclick="newTxtBtnClicked()">
+                            <i class="fas fa-plus"></i>  Add Line
+                        </button> -->
+                        <button onclick="toggleView()"  class="back-home">
+                            <i class="fas fa-times"></i> Back to Gallery
+                        </button>
+                        <a id="dl" download="meme.png" href="#" onclick="dlCanvas(this)">
+                            <span>
+                                <i class="fas fa-cloud-download-alt"></i> Download
+                            </span>
+                        </a>
+                        <a href="#" class="choose_file">
+                            <label for="#">
+                                <input type="file" name="file1" id="file1">
+                            </label>
+                        </a>
+                    </div>
+                 </div>
 
                 <div class="contact">
                 </div>
