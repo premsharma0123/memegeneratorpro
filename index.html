@@ -25,7 +25,7 @@
                        <ul class="nav_item item2">
                           <li><a href="#" class="hvr-shadow-radial">Home</a></li>
                           <li><a href="about.html" class="hvr-shadow-radial">About</a></li>
-                          <li><a href="#" class="hvr-shadow-radial">contact us</a></li>
+                          <li><a href="contact.html" class="hvr-shadow-radial">contact us</a></li>
                        </ul>
                   </nav>
                     <div class="main-bar" class="openbtn"  >
@@ -47,14 +47,15 @@
             <div class="side-item">
                 <a href="#">meme templates</a>
                 <a href="#">categories</a>
-                <a href="#">open editor</a>
+                <a href="#" onclick="initMemeEditor(1,this)">open editor</a>
                 <a href="#">log in</a>
             </div>
           </section>
          <!-- sidebar----section---end-here -->
         <section class="middle_content">
             <div class="container">
-                  <!-- head-line -->
+                <div class="gallery grid-container">
+                            <!-- head-line -->
                   <div class="head_line_wrp">
                     <h2>choose templates</h2>
                     <ul class="unorder">
@@ -64,7 +65,6 @@
                     </ul>
                 </div>
                  <!-- head-line-end---her -->
-                <div class="gallery grid-container">
                     <!-- js render -->
                     <!-- image--grid1---1-->
                     <div class="main-grid" id="Sub_List1" style="display: none;">
@@ -232,35 +232,34 @@
                      <!-- end---here -->
                 </div>
                 <div class="meme-container hidden">
-                    <button onclick="toggleView()"  class="back-home">
-                        <i class="fas fa-times"></i> Back to Gallery
-                    </button>
-
                     <div class="meme-control">
-                        <!-- <canvas class="memeCanvas">
+                        <canvas class="memeCanvas">
                             Your browser does not support the HTML5 canvas tag.
-                        </canvas> -->
-                        <div class="canvas">
+                        </canvas>
+                        <!-- <div class="canva_img">
                             <figure>
                                 <img src="img/gallery/alina.png" alt="">
                             </figure>
-                        </div>
+                        </div> -->
 
                         <div class="txts-list">
                             <!-- js render -->
                         </div>
                     </div>
-                    <button onclick="newTxtBtnClicked()">
-                        <i class="fas fa-plus"></i>  Add Line
-                    </button>
-                    <a id="dl" download="meme.png" href="#" onclick="dlCanvas(this)">
-                        <span>
-                            <i class="fas fa-cloud-download-alt"></i> Download
-                        </span>
-                    </a>
-
+                        <div class="secondary_controler">
+                              <button onclick="newTxtBtnClicked()">
+                            <i class="fas fa-plus"></i>  Add Line
+                        </button>
+                        <button onclick="toggleView()"  class="back-home">
+                            <i class="fas fa-times"></i> Back to Gallery
+                        </button>
+                        <a id="dl" download="meme.png" href="#" onclick="dlCanvas(this)">
+                            <span>
+                                <i class="fas fa-cloud-download-alt"></i> Download
+                            </span>
+                        </a>
+                    </div>
                 </div>
-
                 <div class="contact">
                 </div>
            </div>

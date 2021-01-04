@@ -49,7 +49,7 @@ a, p {
 }
 
 main .middle_content {
-  min-height: calc(100vh - 135px);
+  min-height: calc(100vh - 116px);
 }
 
 main .middle_content .head_line_wrp h2 {
@@ -201,7 +201,7 @@ main .main-grid .item-wrp figure img:hover {
 }
 
 main .main-grid .item-wrp figcaption a {
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   background: #007EAD;
   font-size: 1.2rem;
   font-weight: normal;
@@ -275,6 +275,11 @@ main .sidenav {
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.24'%3E%3Ccircle fill='%23ffffff' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23d7e4ee' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23aec9de' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%2384b0ce' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%235696bd' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23007ead' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 3;
 }
 
 main .sidenav .top-head h2 {
@@ -288,7 +293,7 @@ main .sidenav .top-head h2 {
 main .sidenav .side-item a {
   padding: 1.2rem 0;
   text-decoration: none;
-  font-size: 1.45em;
+  font-size: 1.35em;
   color: #818181;
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
@@ -307,11 +312,11 @@ main .sidenav .side-item a:hover {
 main .sidenav .closebtn {
   position: absolute;
   right: 9px;
-  background: transparent;
+  background: #ffffff3b;
   bottom: 48px;
   color: #007ead;
-  -webkit-box-shadow: 0 0 3px 0 #999;
-  box-shadow: 0 0 6px 1px #99999966;
+  -webkit-box-shadow: 0 0 3px 1px #99999966;
+          box-shadow: 0 0 3px 1px #99999966;
   padding: 1rem;
   font-size: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
@@ -331,7 +336,7 @@ main .sidenav .closebtn i {
 
 .meme_Wrapper .back_home {
   position: absolute;
-  top: 35px;
+  top: 17px;
   left: 32px;
 }
 
@@ -352,7 +357,7 @@ main .sidenav .closebtn i {
 }
 
 .meme_Wrapper .middle_content {
-  min-height: calc(100vh - 191px);
+  min-height: calc(100vh - 121px);
 }
 
 .meme_Wrapper .middle_content .mid_wrp {
@@ -537,10 +542,6 @@ main .sidenav .closebtn i {
   src: url("../fonts/dodis/Dodis-Regular.ttf");
 }
 
-body {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -602,6 +603,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 28px;
 }
 
 .meme-container > button {

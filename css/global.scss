@@ -1,8 +1,4 @@
-
-body {
-    margin: 0;
-}
-
+@import 'mixin';
 a {
     text-decoration: none;
 }
@@ -87,12 +83,15 @@ a {
 
 .meme-container {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     margin: 5px 0;
 }
 
 .meme-control {
-    display: flex;
+@include flex;
+display: grid;
+grid-template-columns: auto auto;
+grid-gap: 28px;
 } 
 
 .meme-container > button {
