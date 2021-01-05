@@ -222,6 +222,23 @@ main .main-grid .item-wrp figcaption a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+main .main-grid .item-wrp figcaption .hvr-bounce-to-right {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-grid .item-wrp figcaption .hvr-bounce-to-right:hover {
+  border-radius: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-grid .item-wrp figcaption .hvr-bounce-to-right:hover::before {
+  border-radius: 100px !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 main footer {
   background: #222;
 }
@@ -683,6 +700,19 @@ main .sidenav .closebtn i {
   .txt-editor p input[type=number] {
     width: 45px;
     margin: .3rem 0;
+  }
+  .meme_Wrapper .middle_content .mid_wrp {
+    margin: 2rem 0 1rem;
+  }
+  .meme_Wrapper .middle_content .mid_wrp .child-mid {
+    width: 100%;
+  }
+  .meme-container {
+    width: 100% !important;
+  }
+  .meme_Wrapper .back_home {
+    top: 10px;
+    right: 23px;
   }
 }
 

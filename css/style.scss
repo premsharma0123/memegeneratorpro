@@ -177,6 +177,17 @@ main{
                       transition: $transition;
                   }
               }
+              .hvr-bounce-to-right{
+                transition: $transition;
+                   &:hover{
+                       border-radius: 100px;
+                       transition: $transition;
+                       &::before{
+                           border-radius: 100px!important;
+                           transition: $transition;
+                       }
+                   }
+              }
           }
       }
   }

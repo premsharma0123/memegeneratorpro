@@ -9,10 +9,12 @@
     <script defer src="./fonts/fontawesome-all.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body onload="init()">
-    <main class="meme_Wrapper">
+    <main class="meme_Wrapper wow fadeIn"  style="visibility: visible;">
         <header>
             <div class="container">
                 <!-- <div class="logo">  <h1>Meme Generator</h1></div> -->
@@ -35,7 +37,7 @@
             </div>
         </header>
          <!-- sidebar----section---end-here -->
-        <section class="middle_content">
+        <section class="middle_content wow fadeIn"  style="visibility: visible;">
             <div class="container">
                 <div class="gallery grid-container grid-wrp">
                     <!-- js render -->
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="meme-container hidden">
+                <div class="meme-container hidden wow fadeIn"  style="visibility: visible;">
                     <div class="meme-control">
                         <canvas class="memeCanvas" id=can>
                             Your browser does not support the HTML5 canvas tag.
@@ -144,21 +146,13 @@
     <script src="js/canva.js"></script>
     <script src="js/main.js"></script>
     <script  src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
-        function upload(){
-        //get the input file
-        var fileinput = document.getElementById("finput");
-        //get the canvas object
-        var canvas = document.getElementById("can");
-        //create an image from the file
-        image0 = new SimpleImage(fileinput);
-        // image1 = new SimpleImage(fileinput);
-        // image2 = new SimpleImage(fileinput);
-        // image3 = new SimpleImage(fileinput);
-        //draw the image in the canvas
-        image0.drawTo(canvas);
-    }
+        new WOW().init();
     </script>
+      <script>
+        AOS.init();
+      </script>
 </body>
-
 </html>
