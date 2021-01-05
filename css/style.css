@@ -703,6 +703,10 @@ main .sidenav .closebtn i {
     right: 20px;
     top: 13px;
   }
+  .meme_Wrapper .back_home {
+    top: 10px;
+    right: 20px;
+  }
 }
 
 /*-------Fonts---------*/

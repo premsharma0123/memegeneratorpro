@@ -49,7 +49,6 @@ $(document).ready(function(){
       // image1 = new SimpleImage(fileinput);
       // image2 = new SimpleImage(fileinput);
       // image3 = new SimpleImage(fileinput);
-      //draw the image in the canvas
       image0.drawTo(canvas);
   }
 
