@@ -92,16 +92,19 @@ a {
     background: #fff;
     width: 70%;
     margin: 3rem auto 1rem;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     border-radius: 5px;
     box-shadow: 0 0 11px 4px #00000012;
 }
 
 .meme-control {
 @include flex;
-display: grid!important;
-grid-template-columns: auto auto;
-grid-gap: 28px;
+justify-content: space-around;
+flex-wrap: nowrap;
+padding: 0 .5rem;
+// display: grid!important;
+// grid-template-columns: auto auto;
+// grid-gap: 28px;
 } 
 
 .meme-container > button {
@@ -113,10 +116,16 @@ grid-gap: 28px;
     padding: 5px 10px;
     border: 1px #007ead66 solid;
     border-radius: 5px;
-    margin: 5px;
+    margin:  .9rem 0 .9rem 1rem;
     box-shadow: 0 0 3px 3px #81777721;
     p{
         padding: 5px 0;
+        input[type=text] {
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 2px;
+            margin: 0 0 .5rem;
+        }
     }
 }
 
