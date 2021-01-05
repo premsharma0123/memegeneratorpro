@@ -36,3 +36,21 @@ $(document).ready(function(){
     }
   
     //----end---here----//
+
+
+    // -------image---upload-----//
+    function upload(){
+      //get the input file
+      var fileinput = document.getElementById("finput");
+      //get the canvas object
+      var canvas = document.getElementById("can");
+      //create an image from the file
+      image0 = new SimpleImage(fileinput);
+      // image1 = new SimpleImage(fileinput);
+      // image2 = new SimpleImage(fileinput);
+      // image3 = new SimpleImage(fileinput);
+      //draw the image in the canvas
+      image0.drawTo(canvas);
+  }
+
+/////-----image---upload-----end---here----//

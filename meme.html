@@ -86,7 +86,7 @@
                 </div>
                 <div class="meme-container hidden">
                     <div class="meme-control">
-                        <canvas class="memeCanvas">
+                        <canvas class="memeCanvas" id=can>
                             Your browser does not support the HTML5 canvas tag.
                         </canvas>
                         <!-- <div class="canva_img">
@@ -113,7 +113,7 @@
                         </a>
                         <a href="#" class="choose_file">
                             <label for="#">
-                                <input type="file" name="file1" id="file1">
+                                <input type="file" multiple="false" name="file1" id="finput" onchange="upload()">
                             </label>
                         </a>
                     </div>
@@ -143,6 +143,22 @@
     <script src="js/meme.js"></script>
     <script src="js/canva.js"></script>
     <script src="js/main.js"></script>
+    <script  src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script>
+        function upload(){
+        //get the input file
+        var fileinput = document.getElementById("finput");
+        //get the canvas object
+        var canvas = document.getElementById("can");
+        //create an image from the file
+        image0 = new SimpleImage(fileinput);
+        // image1 = new SimpleImage(fileinput);
+        // image2 = new SimpleImage(fileinput);
+        // image3 = new SimpleImage(fileinput);
+        //draw the image in the canvas
+        image0.drawTo(canvas);
+    }
+    </script>
 </body>
 
 </html>
